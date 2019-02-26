@@ -20,6 +20,26 @@ body {
     margin: 50px 0px 50px 0px;
 }
 
+.js-form {
+    margin: 5px 0px 5px 0px;
+}
+
+.js-form input {
+    height: 70px;
+    width: 350px;
+    font-size: 25px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 10px;
+    text-indent: 15px;
+    color: rgba(255, 255,255, 1);
+    margin: 5px 0px 5px 0px;
+}
+
+.js-form input::placeholder {
+    color: rgba(244, 244, 244, 0.8);
+}
+
 .js-greetings {
     font-size: 30px;
     margin: 30px 0px 30px 0px;
