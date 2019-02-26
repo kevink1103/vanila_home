@@ -7,8 +7,8 @@ function paintImage(imgNumber) {
     image.src = `img/${imgNumber + 1}.jpg`
     image.addEventListener("load", () => {
         console.log("Image Loaded")
+        image.classList.add("bgImage")
     })
-    image.classList.add("bgImage")
     body.prepend(image)
 }
 
