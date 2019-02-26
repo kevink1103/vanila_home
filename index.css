@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Laila');
+
+body {
+    color: #ecf0f1;
+    text-align: center;
+    font-family: 'Laila', serif;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.js-title {
+    font-size: 80px;
+    margin: 50px 0px 50px 0px;
+}
+
+.js-greetings {
+    font-size: 30px;
+    margin: 30px 0px 30px 0px;
+}
+
+.js-weather {
+    display: block;
+    font-size: 25px;
+    margin: 10px 0px 10px 0px;
+}
+
+.js-toDoForm input {
+    height: 70px;
+    width: 350px;
+    font-size: 25px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 10px;
+    text-indent: 15px;
+    color: rgba(255, 255,255, 1);
+    margin: 5px 0px 5px 0px;
+}
+
+.js-toDoForm input::placeholder {
+    color: rgba(244, 244, 244, 0.8);
+}
+
+.js-toDoList {
+    list-style-type: none;
+    list-style-position: outside;
+    padding: 0;
+}
+
+.js-toDoList li {
+    margin: 5px 0px 5px 0px;
+}
+
+.js-toDoList li button {
+    height: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 5px 5px 7px;
+    margin: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.js-toDoList li span {
+    font-size: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.bgImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    animation: fadeIn .8s linear;
+}
