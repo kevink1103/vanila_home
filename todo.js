@@ -19,7 +19,6 @@ function deleteToDo(event) {
         }
     })
     toDos = cleanToDos
-    console.log(toDos)
     saveToDos()
 }
 

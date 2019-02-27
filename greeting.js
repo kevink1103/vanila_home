@@ -12,8 +12,9 @@ function saveName(text) {
 function handleSubmit(event) {
     event.preventDefault()
     const currentValue = input.value
-    printGreeting(currentValue)
+    input.value = null
     saveName(currentValue)
+    printGreeting(currentValue)
 }
 
 function askForName() {
@@ -21,10 +22,21 @@ function askForName() {
     form.addEventListener('submit', handleSubmit)
 }
 
+function removeName() {
+    localStorage.removeItem(USER_LS)
+}
+
+function handleClick() {
+    greeting.classList.remove(SHOWING_CN)
+    form.classList.add(SHOWING_CN)
+    removeName()
+}
+
 function printGreeting(text) {
     form.classList.remove(SHOWING_CN)
     greeting.classList.add(SHOWING_CN)
     greeting.innerText = `Hello, ${text}`
+    greeting.addEventListener("click", handleClick)
 }
 
 function loadName() {
