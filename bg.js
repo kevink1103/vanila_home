@@ -6,6 +6,10 @@ function paintImage(imgNumber) {
     const image = new Image()
     image.src = `img/${imgNumber + 1}.jpg`
     image.classList.add("bgImage")
+    image.addEventListener("load", () => {
+        console.log("Image Loaded")
+        image.classList.add("animateBg")
+    })
     body.prepend(image)
 }
 

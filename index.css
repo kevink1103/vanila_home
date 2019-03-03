@@ -4,6 +4,7 @@ body {
     color: #ecf0f1;
     text-align: center;
     font-family: 'Laila', serif;
+    padding-top: 8%;
 }
 
 .form,
@@ -17,12 +18,33 @@ body {
 
 .js-title {
     font-size: 80px;
-    margin: 50px 0px 50px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+.js-form {
+    margin: 5px 0px 5px 0px;
+}
+
+.js-form input {
+    height: 60px;
+    width: 350px;
+    font-size: 25px;
+    background-color:rgba(0, 0, 0, 0.3);
+    border: 0;
+    border-radius: 10px;
+    text-indent: 15px;
+    color: rgba(255, 255,255, 1);
+    margin: 5px 0px 5px 0px;
+}
+
+.js-form input::placeholder {
+    color: rgba(244, 244, 244, 0.8);
 }
 
 .js-greetings {
     font-size: 30px;
     margin: 30px 0px 30px 0px;
+    cursor: pointer;
 }
 
 .js-weather {
@@ -32,7 +54,7 @@ body {
 }
 
 .js-toDoForm input {
-    height: 70px;
+    height: 60px;
     width: 350px;
     font-size: 25px;
     background-color:rgba(0, 0, 0, 0.3);
@@ -90,5 +112,8 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+}
+
+.animateBg {
     animation: fadeIn .8s linear;
 }
